@@ -1,4 +1,4 @@
-namespace Memberships.Migrations
+﻿namespace Memberships.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -9,7 +9,8 @@ namespace Memberships.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true; //dzieki temu mogę dokonywać updatów mojej bazy
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(Memberships.Models.ApplicationDbContext context)
